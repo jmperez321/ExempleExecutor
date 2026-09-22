@@ -1,4 +1,4 @@
-package s1;
+package MultiplicacioSeqProc;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,11 +1,8 @@
-package s2;
-
-import ExerciciAlumneExamen.AlumneP;
+package RunnablePaletes;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 

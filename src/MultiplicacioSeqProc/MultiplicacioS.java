@@ -1,4 +1,4 @@
-package s1;
+package MultiplicacioSeqProc;
 
 public class MultiplicacioS {
     private int operador1;

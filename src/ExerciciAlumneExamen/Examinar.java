@@ -1,7 +1,5 @@
 package ExerciciAlumneExamen;
 
-import s1.MultiplicacioS;
-
 import java.util.ArrayList;
 import java.util.List;
 

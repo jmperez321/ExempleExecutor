@@ -1,8 +1,4 @@
-package s2;
-
-import java.util.concurrent.Executor;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ThreadPoolExecutor;
+package RunnablePaletes;
 
 public class Paleta implements Runnable{
 
