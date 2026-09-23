@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/exmultiplicate.iml" filepath="$PROJECT_DIR$/exmultiplicate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/progServProces.iml" filepath="$PROJECT_DIR$/progServProces.iml" />
     </modules>
   </component>
 </project>
