@@ -1,6 +1,6 @@
 package puntuacioDeJugadors;
 
-public class Jugador implements Comparable<Jugador>{
+public class Jugador implements Comparable<Jugador> {
     private String nom;
     private int puntos;
 
@@ -29,17 +29,17 @@ public class Jugador implements Comparable<Jugador>{
     public String toString() {
         return "Jugador{" +
                 "nom='" + nom + '\'' +
-                ", puntos=" + puntos +
+                ", punts=" + puntos +
                 '}';
     }
 
     @Override
     public int compareTo(Jugador o) {
-        if (this.puntos < o.getPuntos()){
+        if (this.puntos < o.getPuntos()) {
             return 1;
-        } else if (this.puntos>o.getPuntos()) {
+        } else if (this.puntos > o.getPuntos()) {
             return -1;
-        }else{
+        } else {
             return 0;
         }
         // return Integer.compare(o.puntos,this.puntos);
