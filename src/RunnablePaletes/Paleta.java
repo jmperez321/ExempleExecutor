@@ -17,7 +17,6 @@ public class Paleta implements Runnable{
             Thread.sleep((int) Math.random());
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
-
         }
         System.out.println(getNom()+" Terminado");
     }
