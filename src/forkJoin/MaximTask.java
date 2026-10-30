@@ -60,7 +60,7 @@ public class MaximTask extends RecursiveTask<Short> {
 
         long time = System.currentTimeMillis();
         // crida la tasca i espera que es completin
-        int result1 = pool.invoke(tasca);
+        pool.invoke(tasca);
         // màxim
         int result = tasca.join();
         System.out.println("Temps utilitzat:" + (System.currentTimeMillis() - time));
