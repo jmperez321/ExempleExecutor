@@ -1,4 +1,4 @@
-package filosofs;
+package concurrencia.filosofs;
 
 public class Cobert {
     //este sera el monitor.

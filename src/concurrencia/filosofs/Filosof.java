@@ -1,4 +1,4 @@
-package filosofs;
+package concurrencia.filosofs;
 
 public class Filosof extends Thread {
     Cobert esquerra;

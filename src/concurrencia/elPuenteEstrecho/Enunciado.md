@@ -1,7 +1,7 @@
 https://moodle.elpuig.xeill.net/pluginfile.php/132108/mod_resource/content/1/Lista%20ejercicios%20concurrencia.pdf
 
 # El puente estrecho
- Construya un sistema para gestionar el tráfico sobre un puente estrecho. El puente lo
+Construya un sistema para gestionar el tráfico sobre un puente estrecho. El puente lo
 pueden atravesar vehículos desde ambos extremos. Como el puente tiene un solo
 carril, en un momento dado sólo puede haber vehículos cruzándolo en un único
 sentido. El puente tiene una capacidad de carga limitada: si hay más de tres vehículos,

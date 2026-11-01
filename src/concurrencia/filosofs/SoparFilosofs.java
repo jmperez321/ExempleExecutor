@@ -1,4 +1,4 @@
-package filosofs;
+package concurrencia.filosofs;
 
 public class SoparFilosofs {
     static void main(String[] args) {
