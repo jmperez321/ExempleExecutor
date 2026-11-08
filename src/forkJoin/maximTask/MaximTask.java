@@ -1,4 +1,4 @@
-package forkJoin;
+package forkJoin.maximTask;
 
 
 import java.util.concurrent.RecursiveTask;

@@ -16,7 +16,8 @@ public class Vehiculo extends Thread {
     public void run() {
         try {
             p.llegarAlPuente(sentidoCoche);
-            System.out.println("Coche " + name + " [Sentido " + sentidoCoche + "] ENTRA al puente.");            Thread.sleep((long) (Math.random() * 2000) + 50);
+            System.out.println("Coche " + name + " [Sentido " + sentidoCoche + "] ENTRA al puente.");
+            Thread.sleep((long) (Math.random() * 2000) + 50);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
