@@ -48,15 +48,17 @@ public class DatagramSocketServer {
 
         // Transformo el array de Bytes a String
         String msg = new String(data,0,length);
+        System.out.println("Client: " + msg);
 
         // Paso el String a mayúsculas.
         String msgUp = msg.toUpperCase();
 
         // Imprimo el string en mayusculas.
-        System.out.println(msgUp);
+        System.out.println("Server: " + msgUp);
 
         // Creamos el paquete para enviar.
         byte[] reSendData = msgUp.getBytes();
+
 
 
         return  reSendData;
