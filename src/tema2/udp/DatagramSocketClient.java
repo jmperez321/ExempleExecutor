@@ -56,7 +56,7 @@ public class DatagramSocketClient {
     }
 
     private byte[] getFirstRequest() {
-        // Aqui pide el mensaje por primera vez
+        // Aquí pide el mensaje por primera vez
         System.out.println("Introduce tu nombre: ");
         String mensaje = sc.nextLine();
         // Lo transforma en bytes
