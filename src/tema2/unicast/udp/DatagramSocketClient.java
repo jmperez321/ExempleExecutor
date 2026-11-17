@@ -1,4 +1,4 @@
-package tema2.udp;
+package tema2.unicast.udp;
 
 import java.io.IOException;
 import java.net.*;

@@ -1,34 +1,28 @@
-package tema2.udp2AdivinaNumero;
+package tema2.unicast.udp;
 
 import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
 import java.net.SocketException;
-import java.nio.ByteBuffer;
 
-// https://github.com/elpuig-dam/mp9-nf2-2627/blob/main/mp9.nf2.udp/TODO.md
 public class DatagramSocketServer {
     DatagramSocket socket;
-    SecretNum numeroSecret;
 
     public void init(int port) throws SocketException {
         socket = new DatagramSocket(port);
-        this.numeroSecret = new SecretNum(100);
     }
 
     public void runServer() throws IOException {
-
-        byte[] receivingData = new byte[4];
+        byte[] receivingData = new byte[1024];
         byte[] sendingData;
         InetAddress clientIP;
         int clientPort;
 
-
         //el servidor atén el port indefinidament
         while (true) {
             //creació del paquet per rebre les dades
-            DatagramPacket packet = new DatagramPacket(receivingData, 4);
+            DatagramPacket packet = new DatagramPacket(receivingData, 1024);
 
             //espera de les dades
             socket.receive(packet);
@@ -52,13 +46,21 @@ public class DatagramSocketServer {
 
     private byte[] processData(byte[] data, int length) {
 
-        // Transformo el array de Bytes a int
-        int receivedNum = ByteBuffer.wrap(data).getInt();
-        System.out.println("Número recibido: "+receivedNum);
-        // Comprueba el número y devuelve 0,1,2.
-        int sendNum = numeroSecret.comprova(receivedNum);
-        // Devuelve sendNum con formato byte[]
-        return ByteBuffer.allocate(4).putInt(sendNum).array();
+        // Transformo el array de Bytes a String
+        String msg = new String(data,0,length);
+        System.out.println("Client: " + msg);
 
+        // Paso el String a mayúsculas.
+        String msgUp = msg.toUpperCase();
+
+        // Imprimo el string en mayusculas.
+        System.out.println("Server: " + msgUp);
+
+        // Creamos el paquete para enviar.
+        byte[] reSendData = msgUp.getBytes();
+
+
+
+        return  reSendData;
     }
 }

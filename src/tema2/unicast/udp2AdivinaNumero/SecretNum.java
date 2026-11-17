@@ -1,4 +1,4 @@
-package tema2.udp2AdivinaNumero;
+package tema2.unicast.udp2AdivinaNumero;
 
 public class SecretNum {
     /* Classe que genera números aleatoris per jugar a endivinar-los i els comprova

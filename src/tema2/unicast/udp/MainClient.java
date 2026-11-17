@@ -1,4 +1,4 @@
-package tema2.udp2AdivinaNumero;
+package tema2.unicast.udp;
 
 import java.io.IOException;
 
