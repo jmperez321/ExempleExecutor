@@ -70,7 +70,6 @@ public class DatagramSocketClient {
     }
 
     private boolean mustContinue(byte[] sendingData) {
-        // Lo transforma en String
         int receivedNum = ByteBuffer.wrap(sendingData).getInt();
         // ignora todos los casos excepto él -1
         if (receivedNum == (-1)) {
