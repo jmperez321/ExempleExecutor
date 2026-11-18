@@ -75,7 +75,7 @@ public class ClientVelocimetre2 {
     }
 
     public static void main(String[] args) throws IOException {
-        ClientVelocimetre2 cvel = new ClientVelocimetre2(5557, "224.0.11.111");
+        ClientVelocimetre2 cvel = new ClientVelocimetre2(5557, "224.3.11.111");
         cvel.runClient();
         System.out.println("Parat!");
 
